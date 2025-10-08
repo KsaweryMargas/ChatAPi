@@ -4,9 +4,9 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 ChatHistory chatHistory = new ChatHistory();
-chatHistory.AddMessage(new ChatMessage("User", "Hello!"));
-chatHistory.AddMessage(new ChatMessage("Bot", "Hi there! How can I assist you today?"));
-chatHistory.AddMessage(new ChatMessage("User", "Can you tell me a joke?"));
+chatHistory.AddMessage(new ChatMessage("User", "Siema!"));
+chatHistory.AddMessage(new ChatMessage("Bot", "co tam"));
+chatHistory.AddMessage(new ChatMessage("User", "dobrze"));
 
 
 app.MapGet("/", () => "Hello World!");
